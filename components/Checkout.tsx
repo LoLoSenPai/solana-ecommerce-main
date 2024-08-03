@@ -66,7 +66,8 @@ const CartCheckoutInner: React.FC<{
       elements,
       clientSecret,
       confirmParams: {
-        return_url: `http://localhost:3000/payment-success?amount=${amount}`,
+        return_url: `https://shop.lololabs.xyz/payment-success?amount=${amount}`,
+        // return_url: `http://localhost:3000/payment-success?amount=${amount}`,
       },
     });
 
