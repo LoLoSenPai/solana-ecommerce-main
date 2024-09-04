@@ -81,7 +81,7 @@ const CartCheckoutInner: React.FC<{
   return (
     <div>
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center z-50  bg-opacity-50">
           <div className="relative p-5 rounded-xl bg-white w-full max-w-md">
             <motion.button
               whileHover={{ scale: 0.9 }}
@@ -254,12 +254,12 @@ export const CartCheckout: React.FC = () => {
   if (cartItems.length === 0) {
     return (
       <>
-        <div className="py-4">
+        {/* <div className="py-4">
           <NavBar />
-        </div>
+        </div> */}
 
-        <div className="bg-black text-white h-screen">
-          <div className="text-white flex justify-center font-bold my-10 text-[52px]">
+        <div className=" text-black h-screen">
+          <div className="text-black flex justify-center font-bold my-10 text-[52px]">
             Shopping Cart
           </div>
           <div className="pt-10 space-y-6 flex flex-col justify-center items-center">
@@ -278,7 +278,7 @@ export const CartCheckout: React.FC = () => {
                 <motion.button
                   whileHover={{ scale: 0.9 }}
                   whileTap={{ scale: 0.8 }}
-                  className="flex justify-center border-2 border-white hover:border-sol-green bg-gray-900 text-white py-3 px-10 text-[28px] font-normal rounded-full shadow-2xl"
+                  className="flex justify-center border-2 border-white hover:border-sol-green bg-gray-400 text-black py-3 px-10 text-[28px] font-normal rounded-full shadow-2xl"
                 >
                   Keep Shopping
                 </motion.button>
@@ -286,7 +286,7 @@ export const CartCheckout: React.FC = () => {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </>
     );
   }
@@ -301,13 +301,13 @@ export const CartCheckout: React.FC = () => {
           currency: "usd",
         }}
       >
-        <div className="py-4">
+        {/* <div className="py-4">
           <NavBar />
-        </div>
-        <div className="text-white flex justify-center font-bold mb-5 text-[44px]">
+        </div> */}
+        <div className="text-black flex justify-center font-bold mb-5 text-[44px]">
           Shopping Cart
         </div>
-        <div className="bg-black text-white h-full flex border-2 border-sol-green rounded-xl">
+        <div className=" text-black h-full flex border-2 border-sol-green rounded-xl">
           <div className="w-1/2 p-6 border-r-2 border-sol-green">
             <form onSubmit={handleFormSubmit} className="space-y-4">
               <h2 className="text-sol-green text-[32px] font-bold mb-4">
@@ -318,7 +318,7 @@ export const CartCheckout: React.FC = () => {
                 <label className="block text-sm font-medium">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 bg-gray-900 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
                   required
                   disabled={isFormSubmitted}
                 />
@@ -327,7 +327,7 @@ export const CartCheckout: React.FC = () => {
                 <label className="block text-sm font-medium">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-2 bg-gray-900 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
                   required
                   disabled={isFormSubmitted}
                 />
@@ -338,7 +338,7 @@ export const CartCheckout: React.FC = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 bg-gray-900 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
                   required
                   disabled={isFormSubmitted}
                 />
@@ -349,7 +349,7 @@ export const CartCheckout: React.FC = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 bg-gray-900 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
                   disabled={isFormSubmitted}
                 />
               </div>
@@ -358,7 +358,7 @@ export const CartCheckout: React.FC = () => {
                   <label className="block text-sm font-medium">City</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 bg-gray-900 text-sol-green rounded-xl"
+                    className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
                     required
                     disabled={isFormSubmitted}
                   />
@@ -369,7 +369,7 @@ export const CartCheckout: React.FC = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 bg-gray-900 text-sol-green rounded-xl"
+                    className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
                     required
                     disabled={isFormSubmitted}
                   />
@@ -379,7 +379,7 @@ export const CartCheckout: React.FC = () => {
                 <div className="w-1/2 ">
                   <label className="block text-sm font-medium">Country</label>
                   <select
-                    className="w-full px-4 py-2 bg-gray-900 text-sol-green rounded-xl"
+                    className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
                     required
                     disabled={isFormSubmitted}
                   >
@@ -398,7 +398,7 @@ export const CartCheckout: React.FC = () => {
                 </label>
                 <input
                   type="tel"
-                  className="w-full px-4 py-2 bg-gray-900 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
                   required
                   disabled={isFormSubmitted}
                 />
@@ -481,7 +481,7 @@ export const CartCheckout: React.FC = () => {
                           {matchingAsset.name}
                           {totalPriceSOL !== "Loading..." && (
                             <>
-                              <span className="flex items-center text-white">
+                              <span className="flex items-center text-black">
                                 <SiSolana className="mr-1" />
                                 {totalPriceSOL} SOL
                                 <span className="ml-1 text-gray-400">
@@ -497,20 +497,20 @@ export const CartCheckout: React.FC = () => {
                           <motion.button
                             whileHover={{ scale: 0.9 }}
                             whileTap={{ scale: 0.8 }}
-                            className="bg-black text-white p-1 rounded-xl w-6 items-center"
+                            className=" text-black p-1 rounded-xl w-6 items-center"
                             onClick={() =>
                               decreaseCartQuantity(matchingAsset.id)
                             }
                           >
                             <FaMinus />
                           </motion.button>
-                          <div className="bg-black text-white p-2 rounded-xl text-[14px] items-center">
+                          <div className=" text-black p-2 rounded-xl text-[14px] items-center">
                             <span>{cartItem.quantity} in cart</span>
                           </div>
                           <motion.button
                             whileHover={{ scale: 0.9 }}
                             whileTap={{ scale: 0.8 }}
-                            className="bg-black text-white p-1 rounded-xl w-6 items-center"
+                            className=" text-black p-1 rounded-xl w-6 items-center"
                             onClick={handleAddToCart}
                           >
                             <FaPlus />
@@ -518,7 +518,7 @@ export const CartCheckout: React.FC = () => {
                           <motion.button
                             whileHover={{ scale: 0.9 }}
                             whileTap={{ scale: 0.8 }}
-                            className={`text-white flex justify-center items-center ml-4 text-[14px] ${
+                            className={`text-black flex justify-center items-center ml-4 text-[14px] ${
                               quantity === 0 ? "opacity-0" : ""
                             }`}
                             onClick={() => removeFromCart(matchingAsset.id)}
@@ -539,16 +539,16 @@ export const CartCheckout: React.FC = () => {
                   {" "}
                   Order Summary:
                 </h1>
-                <div className="flex justify-start font-medium text-[16px] mt-4 text-white">
+                <div className="flex justify-start font-medium text-[16px] mt-4 text-black">
                   Original Price: {totalSOL} SOL{" "}
                   <span className="ml-1 text-gray-400">
                     (${totalUSD.toFixed(2)})
                   </span>
                 </div>
-                <div className="flex justify-start font-medium text-[16px] mt-4 text-white">
+                <div className="flex justify-start font-medium text-[16px] mt-4 text-black">
                   Shipping: $10
                 </div>
-                <div className="flex justify-start font-medium text-[16px] mt-4 text-white">
+                <div className="flex justify-start font-medium text-[16px] mt-4 text-black">
                   Tax:
                 </div>
                 <hr className="border-t-2 border-sol-green my-4"></hr>
@@ -558,7 +558,7 @@ export const CartCheckout: React.FC = () => {
                 <div className="flex justify-center font-bold text-[18px] mt-4 text-sol-green">
                   Select Payment Method
                 </div>
-                <div className="flex font-medium justify-center space-x-3 text-white my-8 text-[14px]">
+                <div className="flex font-medium justify-center space-x-3 text-black my-8 text-[14px]">
                   <motion.button
                     whileHover={{ scale: 0.9 }}
                     whileTap={{ scale: 0.8 }}
@@ -566,7 +566,7 @@ export const CartCheckout: React.FC = () => {
                       !connected || !isFormSubmitted || isTransactionPending
                     }
                     onClick={handleSolanaClick}
-                    className={`flex bg-black rounded-xl py-2 px-3 border-2 border-white hover:border-sol-green ${
+                    className={`flex  rounded-xl py-2 px-3 border-2 border-white hover:border-sol-green ${
                       !connected || !isFormSubmitted || isTransactionPending
                         ? "opacity-50 cursor-not-allowed"
                         : ""
@@ -585,7 +585,7 @@ export const CartCheckout: React.FC = () => {
                       !connected || !isFormSubmitted || isTransactionPending
                     }
                     onClick={handleUsdcClick}
-                    className={`flex bg-black rounded-xl py-2 px-3 border-2 border-white hover:border-sol-green ${
+                    className={`flex  rounded-xl py-2 px-3 border-2 border-white hover:border-sol-green ${
                       !connected || !isFormSubmitted || isTransactionPending
                         ? "opacity-50 cursor-not-allowed"
                         : ""
@@ -600,7 +600,7 @@ export const CartCheckout: React.FC = () => {
                     whileTap={{ scale: 0.8 }}
                     disabled={!isFormSubmitted}
                     onClick={handleStripeClick}
-                    className={`flex bg-black rounded-xl py-2 px-3 border-2 border-white hover:border-sol-green ${
+                    className={`flex  rounded-xl py-2 px-3 border-2 border-white hover:border-sol-green ${
                       !isFormSubmitted ? "opacity-50 cursor-not-allowed" : ""
                     }`}
                   >
@@ -656,7 +656,7 @@ export const CartCheckout: React.FC = () => {
         <FailureModal isOpen={isModalOpen} onClose={handleCloseModal} />
       )}
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

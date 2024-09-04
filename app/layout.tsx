@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import AppWalletProvider from "../context/AppWalletProvider";
 import { NavBar } from "../components/NavBar";
-// import { Jersey_25 } from "next/font/google";
 import { Poppins } from "next/font/google";
 import Footer from "../components/Footer";
 import { ShoppingCartProvider } from "../context/shoppingCart";
@@ -45,13 +44,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <body className="px-28 min-h-screen flex flex-col bg-black">
+      <body className="min-h-screen flex flex-col">
         <AppWalletProvider>
           <ShoppingCartProvider>
-            <main className="flex-grow max-w-custom w-full mx-auto px-4">
+            <NavBar />
+            <main className="flex-grow max-w-custom w-full mx-auto">
               {children}
             </main>
-            {/* <Footer /> */}
+            <Footer />
           </ShoppingCartProvider>
         </AppWalletProvider>
       </body>

@@ -11,48 +11,27 @@ import { useShoppingCart } from "../context/shoppingCart";
 export const NavBar: React.FC = () => {
   const { cartQuantity, isLoading } = useShoppingCart();
 
-  // const navVariants = {
-  //   hidden: { y: -150, opacity: 0 },
-  //   visible: {
-  //     y: 0,
-  //     opacity: 1,
-  //     transition: {
-  //       staggerChildren: 0.2, // this will stagger the children's animations
-  //     },
-  //   },
-  // };
-
-  // const navItemVariants = {
-  //   hidden: { y: -20, opacity: 0 },
-  //   visible: { y: 0, opacity: 1 },
-  // };
-
   return (
     <>
       <motion.nav
-        className="p-10 h-24 shadow-lg shadow-sol-green rounded-xl"
-        // initial="hidden"
-        // animate="visible"
-        // variants={navVariants}
-        // transition={{ duration: 1 }}
+        className="fixed top-0 left-0 right-0 p-10 h-24 z-50"
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
+        <div className="mx-auto flex justify-between items-center h-full">
           <Link href="/">
             <motion.button
-              className="flex items-center text-sol-green font-bold text-[32px]"
-              // variants={navItemVariants}
+              className="flex items-center text-black font-bold text-[32px]"
             >
-              Crypto
-              <span className="ml-2">
-                <SiSolana />
-              </span>
-              tore
+              <img
+                src="/logo.jpeg"
+                alt="Logo"
+                className="h-120 w-20 rounded-full"
+              />
+              <p className="ml-4 text-5xl">RORO</p>
             </motion.button>
           </Link>
 
           <div className="flex flex-row gap-4">
             <motion.div
-            // variants={navItemVariants}
             >
               <CustomWalletButton />
             </motion.div>
@@ -60,8 +39,7 @@ export const NavBar: React.FC = () => {
               <motion.button
                 whileHover={{ scale: 0.9 }}
                 whileTap={{ scale: 0.8 }}
-                className="flex items-center justify-center bg-gray-900 h-[40px] md:h-[60px] px-4 rounded-xl text-white border-2 border-white hover:border-2 hover:border-sol-green font-medium"
-                // variants={navItemVariants}
+                className="flex items-center justify-center bg-gray-200 h-[40px] md:h-[60px] px-4 rounded-xl text-black border-2 border-white hover:border-2 hover:border-sol-green font-medium"
               >
                 <MdOutlineShoppingBag className="text-[24px] items-center" />
                 {!isLoading && cartQuantity > 0 && (
@@ -74,7 +52,6 @@ export const NavBar: React.FC = () => {
           </div>
         </div>
       </motion.nav>
-      {/* <hr className="mt-2 border-t-2 border-sol-green "></hr> */}
     </>
   );
 };

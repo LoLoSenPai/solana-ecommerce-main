@@ -18,7 +18,7 @@
 //   };
 
 //   return (
-//     <main className="flex justify-center items-center min-h-screen max-w-6xl mx-auto text-white text-center bg-black">
+//     <main className="flex justify-center items-center min-h-screen max-w-6xl mx-auto text-black text-center ">
 //       <div className="mb-10">
 //         <h1 className="text-4xl font-extrabold mb-2 text-sol-green py-10">
 //           Order submitted!
@@ -26,7 +26,7 @@
 //         <h2 className="text-2xl">Thank you so much for your order!</h2>
 //         <h2 className="text-2xl py-5">Order ID:</h2>
 
-//         <div className="bg-gray-900 p-2 rounded-xl text-sol-green mt-5 text-2xl font-bold">
+//         <div className="bg-gray-400 p-2 rounded-xl text-sol-green mt-5 text-2xl font-bold">
 //           Total Spent: ${amount}
 //         </div>
 
@@ -61,7 +61,7 @@
 //             whileHover={{ scale: 0.9 }}
 //             whileTap={{ scale: 0.8 }}
 //             onClick={handleKeepShopping}
-//             className="mt-10 bg-gray-900 text-sol-green 0 p-3 rounded-xl font-bold text-xl"
+//             className="mt-10 bg-gray-400 text-sol-green 0 p-3 rounded-xl font-bold text-xl"
 //           >
 //             Click here to keep shopping
 //           </motion.button>
@@ -92,7 +92,7 @@ export default function PaymentSuccess({
   const isMultipleItems = cartItems.length > 1;
 
   return (
-    <main className="flex justify-center items-center min-h-screen max-w-6xl mx-auto text-white text-center bg-black">
+    <main className="flex justify-center items-center min-h-screen max-w-6xl mx-auto text-black text-center ">
       <div className="mb-10">
         <h1 className="text-4xl font-extrabold mb-2 text-sol-green pb-5">
           Order submitted!
@@ -100,7 +100,7 @@ export default function PaymentSuccess({
         <h2 className="text-2xl">Thank you so much for your order!</h2>
         <h2 className="text-2xl py-5">Order ID:</h2>
 
-        <div className="bg-gray-900 p-2 rounded-xl text-sol-green mt-5 text-2xl font-bold">
+        <div className="bg-gray-400 p-2 rounded-xl text-sol-green mt-5 text-2xl font-bold">
           Total Spent: ${amount}
         </div>
 
@@ -141,7 +141,7 @@ export default function PaymentSuccess({
             whileHover={{ scale: 0.9 }}
             whileTap={{ scale: 0.8 }}
             onClick={handleKeepShopping}
-            className="mt-10 bg-gray-900 text-sol-green 0 p-3 rounded-xl font-bold text-xl"
+            className="mt-10 bg-gray-400 text-sol-green 0 p-3 rounded-xl font-bold text-xl"
           >
             Click here to keep shopping
           </motion.button>

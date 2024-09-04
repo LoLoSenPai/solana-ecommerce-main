@@ -6,7 +6,7 @@ import "../css/hologramStyles.css";
 
 export const LandingPage = () => {
   return (
-    <div className="py-2 bg-black text-white">
+    <div className="py-2  text-black">
       <h1 className="mb-8 text-[52px] font-semibold">Store</h1>
       <div className="flex justify-between mb-5 text-[20px]">
         <div>

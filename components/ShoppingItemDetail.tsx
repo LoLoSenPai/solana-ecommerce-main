@@ -56,11 +56,11 @@ export default function ShoppingItemDetail() {
 
   return (
     <>
-      <div className="py-4">
+      {/* <div className="py-4">
         <NavBar />
-      </div>
+      </div> */}
 
-      <div className="flex justify-center h-full py-10 overflow-y-auto no-scrollbar bg-black">
+      <div className="flex justify-center h-full py-10 overflow-y-auto no-scrollbar ">
         <motion.div className="relative flex justify-center items-center mt-2">
           <Image
             width={500}
@@ -79,7 +79,7 @@ export default function ShoppingItemDetail() {
           </motion.button>
         </motion.div>
 
-        <div className="flex justify-center flex-col ml-12 space-y-5 text-white w-[500px]">
+        <div className="flex justify-center flex-col ml-12 space-y-5 text-black w-[500px]">
           <motion.p className="text-[36px] font-semibold">
             {matchingAsset.name}
           </motion.p>
@@ -102,30 +102,30 @@ export default function ShoppingItemDetail() {
               <motion.button
                 whileHover={{ scale: 0.9 }}
                 whileTap={{ scale: 0.8 }}
-                className="bg-gray-900 text-white font-medium text-[18px] w-[200px] border-2 border-white hover:border-2 hover:border-sol-green p-3 rounded-xl flex justify-center items-center"
+                className="bg-gray-400 text-black font-medium text-[18px] w-[200px] border-2 border-white hover:border-2 hover:border-sol-green p-3 rounded-xl flex justify-center items-center"
                 onClick={() => increaseCartQuantity(matchingAsset.id)}
               >
                 <MdOutlineShoppingBag className="mr-4 w-auto h-[24px]" /> Add To
                 Cart
               </motion.button>
             ) : (
-              <div className="flex items-center flex-col gap-2 bg-gray-900 text-white">
+              <div className="flex items-center flex-col gap-2 bg-gray-400 text-black">
                 <div className="flex justify-center gap-2 border-2 border-white hover:border-2 hover:border-sol-green rounded-xl py-2">
                   <motion.button
                     whileHover={{ scale: 0.9 }}
                     whileTap={{ scale: 0.8 }}
-                    className="bg-gray-900 text-white px-4 rounded-xl"
+                    className="bg-gray-400 text-black px-4 rounded-xl"
                     onClick={() => decreaseCartQuantity(matchingAsset.id)}
                   >
                     <FaMinus />
                   </motion.button>
-                  <div className="bg-gray-900 text-white font-medium py-1 text-[18px] w-[100px] flex justify-center items-center rounded-xl ">
+                  <div className="bg-gray-400 text-black font-medium py-1 text-[18px] w-[100px] flex justify-center items-center rounded-xl ">
                     <span>{quantity} in cart</span>
                   </div>
                   <motion.button
                     whileHover={{ scale: 0.9 }}
                     whileTap={{ scale: 0.8 }}
-                    className="bg-gray-900 text-white px-4 rounded-xl"
+                    className="bg-gray-400 text-black px-4 rounded-xl"
                     onClick={() => increaseCartQuantity(matchingAsset.id)}
                   >
                     <FaPlus />
@@ -136,10 +136,10 @@ export default function ShoppingItemDetail() {
           </motion.div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
 
       {enlargedImage && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+        <div className="fixed inset-0 flex items-center justify-center  bg-opacity-75 z-50">
           <div className="relative">
             <Image
               src={enlargedImage}

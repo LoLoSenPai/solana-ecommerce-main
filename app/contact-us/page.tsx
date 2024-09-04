@@ -3,7 +3,7 @@ import { NavBar } from "@/components/NavBar";
 import React, { useState } from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 import { motion } from "framer-motion";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 
 export default function Pages() {
   const [formState, setFormState] = useState({
@@ -67,13 +67,13 @@ export default function Pages() {
 
   return (
     <>
-      <div className="py-4">
+      {/* <div className="py-4">
         <NavBar />
-      </div>
+      </div> */}
 
       <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 pt-10">
         <div className="flex flex-col p-4 md:p-0 lg:p-0 items-center space-y-4 md:space-y-0 md:items-start">
-          <h2 className="font-poppins text-white font-medium md:text-[32px] text-[24px] pb-4 relative">
+          <h2 className="font-poppins text-black font-medium md:text-[32px] text-[24px] pb-4 relative">
             Write Me
             <span className="absolute left-0 bottom-[0px] md:left-5 md:bottom-[8px] w-[100px] h-[2px] bg-[#14F195]"></span>
           </h2>
@@ -89,7 +89,7 @@ export default function Pages() {
           <form onSubmit={handleSubmit} className="flex flex-col gap-6 pt-2">
             <div className="w-full">
               <label
-                className="block text-white mb-2 font-medium text-[12px] lg:text-[14px]"
+                className="block text-black mb-2 font-medium text-[12px] lg:text-[14px]"
                 htmlFor="firstName"
               >
                 First Name *
@@ -100,13 +100,13 @@ export default function Pages() {
                 name="firstName"
                 value={formState.firstName}
                 onChange={handleChange}
-                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-900"
+                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-400"
                 required
               />
             </div>
             <div className="w-full">
               <label
-                className="block text-white mb-2 font-medium text-[12px] lg:text-[14px]"
+                className="block text-black mb-2 font-medium text-[12px] lg:text-[14px]"
                 htmlFor="lastName"
               >
                 Last Name *
@@ -117,13 +117,13 @@ export default function Pages() {
                 name="lastName"
                 value={formState.lastName}
                 onChange={handleChange}
-                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-900"
+                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-400"
                 required
               />
             </div>
             <div className="w-full">
               <label
-                className="block text-white mb-2 font-medium text-[12px] lg:text-[14px]"
+                className="block text-black mb-2 font-medium text-[12px] lg:text-[14px]"
                 htmlFor="email"
               >
                 Email *
@@ -134,17 +134,17 @@ export default function Pages() {
                 name="email"
                 value={formState.email}
                 onChange={handleChange}
-                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-900"
+                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-400"
                 required
               />
             </div>
             <div className="w-full">
               <label
-                className="block text-white mb-2 font-medium text-[12px] lg:text-[14px]"
+                className="block text-black mb-2 font-medium text-[12px] lg:text-[14px]"
                 htmlFor="mobile"
               >
                 Mobile{" "}
-                <span className="text-white text-opacity-60">(Optional)</span>
+                <span className="text-black text-opacity-60">(Optional)</span>
               </label>
               <input
                 type="text"
@@ -152,16 +152,16 @@ export default function Pages() {
                 name="mobile"
                 value={formState.mobile}
                 onChange={handleChange}
-                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-900"
+                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-400"
               />
             </div>
             <div className="w-full">
               <label
-                className="block text-white mb-2 font-medium text-[12px] lg:text-[14px]"
+                className="block text-black mb-2 font-medium text-[12px] lg:text-[14px]"
                 htmlFor="company"
               >
                 Company{" "}
-                <span className="text-white text-opacity-60">(Optional)</span>
+                <span className="text-black text-opacity-60">(Optional)</span>
               </label>
               <input
                 type="text"
@@ -169,12 +169,12 @@ export default function Pages() {
                 name="company"
                 value={formState.company}
                 onChange={handleChange}
-                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-900"
+                className="p-2 rounded-xl w-full h-[44px] text-sol-green bg-gray-400"
               />
             </div>
             <div className="w-full">
               <label
-                className="block text-white mb-2 font-medium text-[12px] lg:text-[14px]"
+                className="block text-black mb-2 font-medium text-[12px] lg:text-[14px]"
                 htmlFor="message"
               >
                 Message *
@@ -185,7 +185,7 @@ export default function Pages() {
                 placeholder="Type your message"
                 value={formState.message}
                 onChange={handleChange}
-                className="p-2 w-full h-48 rounded-xl text-sol-green bg-gray-900 text-[12px] md:text-[14px]"
+                className="p-2 w-full h-48 rounded-xl text-sol-green bg-gray-400 text-[12px] md:text-[14px]"
                 required
               />
             </div>
@@ -211,7 +211,7 @@ export default function Pages() {
           </form>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

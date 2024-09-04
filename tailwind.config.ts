@@ -13,7 +13,8 @@ const config: Config = {
       },
       colors: {
         "sol-purple": "#9945FF",
-        "sol-green": "#14F195",
+        "sol-green": "#000",
+        // "sol-green": "#14F195",
         "light-blue": "#2497f2",
         "royal-blue": "#4352ff",
         "custom-gray": "#7b7a7b",

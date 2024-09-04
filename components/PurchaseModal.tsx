@@ -32,13 +32,13 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
-      <div className="bg-black p-6 rounded-lg max-w-lg w-full relative border-2 border-sol-green shadow-2xl shadow-sol-green">
+    <div className="fixed inset-0  bg-opacity-75 flex justify-center items-center z-50">
+      <div className=" p-6 rounded-lg max-w-lg w-full relative border-2 border-sol-green shadow-2xl shadow-sol-green">
         <motion.button
           whileHover={{ scale: 0.9 }}
           whileTap={{ scale: 0.8 }}
           onClick={handleKeepShopping}
-          className="absolute top-2 right-2 text-white hover:text-sol-green"
+          className="absolute top-2 right-2 text-black hover:text-sol-green"
         >
           <FaTimes size={20} />
         </motion.button>
@@ -54,14 +54,14 @@ const PurchaseModal: React.FC<PurchaseModalProps> = ({
               alt={item.name}
               className="w-16 h-16 object-cover rounded-md"
             />
-            <div className="ml-4 text-white">
+            <div className="ml-4 text-black">
               <div className="font-bold">{item.name}</div>
               <div>Quantity: {item.quantity}</div>
               <div>Price: ${(item.price * item.quantity).toFixed(2)}</div>
             </div>
           </div>
         ))}
-        <div className="font-bold text-lg text-white">
+        <div className="font-bold text-lg text-black">
           {paymentMethod === "SOL" ? (
             <>
               Total Spent: {totalSOL} SOL (${totalSpent})
