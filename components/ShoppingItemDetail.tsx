@@ -9,8 +9,6 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { getSolPrice } from "../utils/solPrice";
-import { NavBar } from "./NavBar";
-import Footer from "./Footer";
 import { ImEnlarge } from "react-icons/im";
 
 export default function ShoppingItemDetail() {
@@ -56,30 +54,28 @@ export default function ShoppingItemDetail() {
 
   return (
     <>
-      {/* <div className="py-4">
-        <NavBar />
-      </div> */}
-
-      <div className="flex justify-center h-full py-10 overflow-y-auto no-scrollbar ">
-        <motion.div className="relative flex justify-center items-center mt-2">
-          <Image
-            width={500}
-            height={500}
-            src={matchingAsset.image}
-            alt={matchingAsset.name}
-            className="rounded-xl mr-10"
-          />
-          <motion.button
-            whileHover={{ scale: 0.9 }}
-            whileTap={{ scale: 0.8 }}
-            onClick={() => handleEnlargeImage(matchingAsset.image)}
-            className="absolute bottom-4 right-14 text-black"
-          >
-            <ImEnlarge size={24} />
-          </motion.button>
+      <div className="flex max-sm:flex-col max-sm:gap-8 justify-center mt-20 py-10">
+        <motion.div className="flex justify-center items-center sm:w-1/2">
+          <div className="relative">
+            <Image
+              width={500}
+              height={500}
+              src={matchingAsset.image}
+              alt={matchingAsset.name}
+              className="relative rounded-xl"
+            />
+            <motion.button
+              whileHover={{ scale: 0.9 }}
+              whileTap={{ scale: 0.8 }}
+              onClick={() => handleEnlargeImage(matchingAsset.image)}
+              className="absolute bottom-10 right-10 text-black"
+            >
+              <ImEnlarge size={24} />
+            </motion.button>
+          </div>
         </motion.div>
 
-        <div className="flex justify-center flex-col ml-12 space-y-5 text-black w-[500px]">
+        <div className="flex justify-center flex-col ml-12 space-y-5 text-black sm:w-1/2 pr-10">
           <motion.p className="text-[36px] font-semibold">
             {matchingAsset.name}
           </motion.p>

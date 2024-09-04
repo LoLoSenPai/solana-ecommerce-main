@@ -254,11 +254,7 @@ export const CartCheckout: React.FC = () => {
   if (cartItems.length === 0) {
     return (
       <>
-        {/* <div className="py-4">
-          <NavBar />
-        </div> */}
-
-        <div className=" text-black h-screen">
+        <div className=" text-black pt-20">
           <div className="text-black flex justify-center font-bold my-10 text-[52px]">
             Shopping Cart
           </div>
@@ -278,7 +274,7 @@ export const CartCheckout: React.FC = () => {
                 <motion.button
                   whileHover={{ scale: 0.9 }}
                   whileTap={{ scale: 0.8 }}
-                  className="flex justify-center border-2 border-white hover:border-sol-green bg-gray-400 text-black py-3 px-10 text-[28px] font-normal rounded-full shadow-2xl"
+                  className="flex justify-center border-2 border-white hover:border-sol-green bg-gray-100/80 text-black py-3 px-10 text-[28px] font-normal rounded-full shadow-2xl"
                 >
                   Keep Shopping
                 </motion.button>
@@ -286,7 +282,6 @@ export const CartCheckout: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* <Footer /> */}
       </>
     );
   }
@@ -304,7 +299,7 @@ export const CartCheckout: React.FC = () => {
         {/* <div className="py-4">
           <NavBar />
         </div> */}
-        <div className="text-black flex justify-center font-bold mb-5 text-[44px]">
+        <div className="text-black flex justify-center font-bold mb-5 text-[44px] mt-20">
           Shopping Cart
         </div>
         <div className=" text-black h-full flex border-2 border-sol-green rounded-xl">
@@ -318,7 +313,7 @@ export const CartCheckout: React.FC = () => {
                 <label className="block text-sm font-medium">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-100/80 text-sol-green rounded-xl"
                   required
                   disabled={isFormSubmitted}
                 />
@@ -327,7 +322,7 @@ export const CartCheckout: React.FC = () => {
                 <label className="block text-sm font-medium">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-100/80 text-sol-green rounded-xl"
                   required
                   disabled={isFormSubmitted}
                 />
@@ -338,7 +333,7 @@ export const CartCheckout: React.FC = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-100/80 text-sol-green rounded-xl"
                   required
                   disabled={isFormSubmitted}
                 />
@@ -349,7 +344,7 @@ export const CartCheckout: React.FC = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-100/80 text-sol-green rounded-xl"
                   disabled={isFormSubmitted}
                 />
               </div>
@@ -358,7 +353,7 @@ export const CartCheckout: React.FC = () => {
                   <label className="block text-sm font-medium">City</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
+                    className="w-full px-4 py-2 bg-gray-100/80 text-sol-green rounded-xl"
                     required
                     disabled={isFormSubmitted}
                   />
@@ -369,7 +364,7 @@ export const CartCheckout: React.FC = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
+                    className="w-full px-4 py-2 bg-gray-100/80 text-sol-green rounded-xl"
                     required
                     disabled={isFormSubmitted}
                   />
@@ -379,7 +374,7 @@ export const CartCheckout: React.FC = () => {
                 <div className="w-1/2 ">
                   <label className="block text-sm font-medium">Country</label>
                   <select
-                    className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
+                    className="w-full px-4 py-2 bg-gray-100/80 text-sol-green rounded-xl"
                     required
                     disabled={isFormSubmitted}
                   >
@@ -398,7 +393,7 @@ export const CartCheckout: React.FC = () => {
                 </label>
                 <input
                   type="tel"
-                  className="w-full px-4 py-2 bg-gray-400 text-sol-green rounded-xl"
+                  className="w-full px-4 py-2 bg-gray-100/80 text-sol-green rounded-xl"
                   required
                   disabled={isFormSubmitted}
                 />
@@ -408,7 +403,7 @@ export const CartCheckout: React.FC = () => {
                 whileTap={{ scale: 0.8 }}
                 type="submit"
                 className={`w-full py-2 mt-4 ${
-                  isFormSubmitted ? "hidden" : "bg-sol-green"
+                  isFormSubmitted ? "hidden" : "bg-purple-500"
                 } text-black font-medium rounded-xl hover:bg-sol-green-light transition-colors`}
                 disabled={isFormSubmitted}
               >
@@ -558,7 +553,7 @@ export const CartCheckout: React.FC = () => {
                 <div className="flex justify-center font-bold text-[18px] mt-4 text-sol-green">
                   Select Payment Method
                 </div>
-                <div className="flex font-medium justify-center space-x-3 text-black my-8 text-[14px]">
+                <div className="flex max-md:flex-col font-medium justify-center gap-3 text-black my-8 text-[14px]">
                   <motion.button
                     whileHover={{ scale: 0.9 }}
                     whileTap={{ scale: 0.8 }}

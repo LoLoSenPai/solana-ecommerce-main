@@ -20,7 +20,7 @@ function Footer() {
   ];
 
   const dataSocial = [
-    { link: "https://x.com/KaktosSol", icon: <FaXTwitter size={24} /> },
+    { link: "https://x.com/LoicDlugosz", icon: <FaXTwitter size={24} /> },
 
     // {
     //   link: "https://www.linkedin.com/in/ryanschwarting/",
@@ -83,17 +83,11 @@ function Footer() {
   };
 
   return (
-    <div className="flex justify-center items-center px-2 md:px-0  ">
-      <div className=" border-t-2 border-l-2 border-r-2 border-sol-green p-10 w-full mt-24 rounded-t-xl">
+    <div className="flex justify-center items-center">
+      <div className=" border-t-2 border-l-2 border-r-2 border-sol-green p-3 sm:p-10 w-full mt-24 rounded-t-xl">
         <div className="flex flex-wrap justify-between mb-8">
           <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
             <div className="flex flex-col">
-              <p className="font-normal text-[14px] text-black leading-[20px] tracking-tight mt-4">
-                Contact me directly
-              </p>
-              <p className="font-normal text-[14px] text-black leading-[20px] tracking-tight">
-                with any questions.
-              </p>
               <a
                 className="mt-4 text-sol-green text-[14px] tracking-tight  "
                 href="/contact-us"
@@ -102,7 +96,7 @@ function Footer() {
                   whileHover={{ scale: 0.9 }}
                   whileTap={{ scale: 0.8 }}
                 >
-                  Contact Form
+                  Contact Us
                 </motion.button>
               </a>
             </div>
@@ -114,18 +108,18 @@ function Footer() {
             </h2>
             <form
               onSubmit={handleSubmit}
-              className="flex mt-4 items-center bg-gray-400 rounded-full p-1 pr-1"
+              className="flex mt-4 items-center bg-gray-100 rounded-full p-1 pr-1"
             >
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-grow p-2 text-[14px] text-sol-green bg-gray-400 border-none outline-none rounded-full"
+                className="flex-grow p-2 text-[14px] bg-gray-100  border-none outline-none rounded-full"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button
                 type="submit"
-                className="bg-[#14F195] text-black font-medium text-[14px] leading-[24px] tracking-tight px-4 py-2 rounded-full transform transition-transform duration-300 hover:scale-95"
+                className="bg-purple-600 text-black font-medium text-[14px] leading-[24px] tracking-tight px-4 py-2 rounded-full transform transition-transform duration-300 hover:scale-95"
               >
                 Sign Up
               </button>
@@ -137,7 +131,7 @@ function Footer() {
         </div>
         <div className="flex flex-row justify-between items-center border-t-2 pt-4 border-sol-green">
           <p className="text-black text-[14px] md:text-[14px] sm:mb-0 mr-2">
-            &copy; 2024 Kaktos. All rights reserved.
+            &copy; 2024 RoroLand. All rights reserved.
           </p>
           <div className="text-black text-[12px] justify-center space-x-4">
             <ul className="flex space-x-6">
