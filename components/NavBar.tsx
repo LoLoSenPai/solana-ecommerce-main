@@ -14,7 +14,7 @@ export const NavBar: React.FC = () => {
   return (
     <>
       <motion.nav
-        className="fixed top-0 left-0 right-0 p-10 h-24 z-50"
+        className="fixed top-0 left-0 right-0 p-3 sm:p-10 h-24 z-50"
       >
         <div className="mx-auto flex justify-between items-center h-full">
           <Link href="/">
@@ -26,7 +26,7 @@ export const NavBar: React.FC = () => {
                 alt="Logo"
                 className="h-120 w-20 rounded-full"
               />
-              <p className="ml-4 text-5xl">RORO</p>
+              <p className="ml-4 text-5xl max-sm:hidden">RORO</p>
             </motion.button>
           </Link>
 

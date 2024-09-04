@@ -6,7 +6,7 @@ import "../css/hologramStyles.css";
 
 export const LandingPage = () => {
   return (
-    <div className="py-2  text-black">
+    <div className="py-2 text-black">
       <h1 className="mb-8 text-[52px] font-semibold">Store</h1>
       <div className="flex justify-between mb-5 text-[20px]">
         <div>
@@ -24,7 +24,7 @@ export const LandingPage = () => {
         {assets.map((asset, index) => {
           return (
             <Link href={`/item-detail/${asset.id}`} key={asset.image}>
-              <div>
+              <div className="p-4">
                 <ShoppingItem {...asset} />
               </div>
             </Link>

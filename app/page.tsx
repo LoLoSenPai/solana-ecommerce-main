@@ -9,7 +9,7 @@ export default function Home() {
       <div className="mt-20">
         <Banner />
       </div>
-      <div className="flex justify-center w-full min-h-screen">
+      <div className="">
         <LandingPage />
       </div>
     </main>

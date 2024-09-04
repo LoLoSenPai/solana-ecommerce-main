@@ -16,6 +16,14 @@
   }
 } */
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #ffeca9;
 }
@@ -25,3 +33,15 @@ body {
     text-wrap: balance;
   }
 } */
+
+@media (min-width: 1310px) {
+  img {
+    transform: scale(1.01); /* Zoom léger pour éliminer les marges */
+  }
+}
+
+@media (min-width: 1600px) {
+  img {
+    transform: scale(1.02); /* Zoom un peu plus fort si nécessaire */
+  }
+}

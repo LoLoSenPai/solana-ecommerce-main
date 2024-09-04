@@ -48,7 +48,7 @@ export default function RootLayout({
         <AppWalletProvider>
           <ShoppingCartProvider>
             <NavBar />
-            <main className="flex-grow max-w-custom w-full mx-auto">
+            <main className="flex-grow w-full">
               {children}
             </main>
             <Footer />
