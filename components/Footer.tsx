@@ -108,18 +108,18 @@ function Footer() {
             </h2>
             <form
               onSubmit={handleSubmit}
-              className="flex mt-4 items-center bg-gray-100 rounded-full p-1 pr-1"
+              className="flex mt-4 items-center bg-gray-100 rounded-full md:p-1"
             >
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-grow p-2 text-[14px] bg-gray-100  border-none outline-none rounded-full"
+                className="flex-grow pl-2 text-[14px] bg-gray-100 border-none outline-none rounded-full"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button
                 type="submit"
-                className="bg-purple-600 text-black font-medium text-[14px] leading-[24px] tracking-tight px-4 py-2 rounded-full transform transition-transform duration-300 hover:scale-95"
+                className="bg-purple-600 text-black font-medium text-[14px] leading-[24px] tracking-tight px-4 py-2 rounded-full transform transition-transform duration-300 hover:scale-95 min-w-[85px]"
               >
                 Sign Up
               </button>
