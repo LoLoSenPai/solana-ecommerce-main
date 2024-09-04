@@ -9,7 +9,7 @@ export const Banner = () => {
         <img
           src="/banner-2024-col.png"
           alt="2024 Collection Banner"
-          className="sm:absolute bottom-0.5 right-0 min-w-auto h-1/2 sm:h-[220px] md:h-[281px]"
+          className="sm:absolute bottom-0.5 right-0 min-w-auto h-1/2 sm:h-[220px] lg:h-[281px]"
         />
       </div>
     </div>

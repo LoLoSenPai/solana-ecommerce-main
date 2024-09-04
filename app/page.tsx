@@ -6,11 +6,13 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <div className="mt-20">
-        <Banner />
-      </div>
-      <div className="">
-        <LandingPage />
+      <div className="px-5 sm:px-10">
+        <div className="mt-20 xl:px-20">
+          <Banner />
+        </div>
+        <div className="">
+          <LandingPage />
+        </div>
       </div>
     </main>
   );
