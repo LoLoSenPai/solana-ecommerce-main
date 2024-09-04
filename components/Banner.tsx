@@ -2,7 +2,7 @@
 
 export const Banner = () => {
   return (
-    <div className="relative flex justify-between items-center w-full bg-gradient-to-r from-black to-blue-900 rounded-xl p-8 my-8 h-64">
+    <div className="relative flex max-sm:flex-col justify-between items-center w-full bg-gradient-to-r from-black to-blue-900 rounded-xl p-8 my-8 h-64">
       <div className="text-white font-bold text-5xl">
         <h2>2024 COLLECTION</h2>
         <p className="text-xl mt-2">RORO</p>
