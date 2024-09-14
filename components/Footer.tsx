@@ -84,7 +84,7 @@ function Footer() {
 
   return (
     <div className="flex justify-center items-center">
-      <div className=" border-t-2 border-l-2 border-r-2 border-sol-green p-3 sm:p-10 w-full mt-24 rounded-t-xl">
+      <div className=" border-t-2 border-l-2 border-r-2 border-sol-green p-3 sm:p-10 w-full rounded-t-xl">
         <div className="flex flex-wrap justify-between mb-8">
           <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
             <div className="flex flex-col">

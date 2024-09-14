@@ -1,5 +1,4 @@
 "use client";
-import { NavBar } from "@/components/NavBar";
 import React, { useState } from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 import { motion } from "framer-motion";
