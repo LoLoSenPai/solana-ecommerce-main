@@ -12,29 +12,29 @@ const font = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Solana Ecommerce",
+  title: "Roro Shop",
   description: "Ecommerce site to purchase crypto products.",
-  metadataBase: new URL("https://solana-nft-minting-dapp-kaktos.vercel.app/"),
+  metadataBase: new URL("https://shop.lololabs.xyz/"),
   openGraph: {
-    title: "Solana Ecommerce",
+    title: "Roro Shop",
     description: "Ecommerce site to purchase crypto products.",
-    url: "https://solana-nft-minting-dapp-kaktos.vercel.app/",
-    siteName: "Solana Ecommerce",
+    url: "https://shop.lololabs.xyz/",
+    siteName: "Roro Shop",
     images: [
       {
-        url: "/kaktosSMB.png",
+        url: "/website-preview.png",
         width: 1260,
         height: 800,
       },
     ],
   },
   twitter: {
-    site: `@KaktosSol`,
-    creator: `@KaktosSol`,
+    site: `@LoicDlugosz`,
+    creator: `@LoicDlugosz`,
     card: "summary",
   },
   category: "blockchain",
-  icons: "/kaktosSMB.png",
+  icons: "/logo.jpeg",
 };
 
 export default function RootLayout({
@@ -44,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col scroll-smooth overflow-y-auto">
         <AppWalletProvider>
           <ShoppingCartProvider>
             <NavBar />

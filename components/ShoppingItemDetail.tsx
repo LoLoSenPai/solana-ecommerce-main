@@ -98,7 +98,7 @@ export default function ShoppingItemDetail() {
               <motion.button
                 whileHover={{ scale: 0.9 }}
                 whileTap={{ scale: 0.8 }}
-                className="bg-gray-400 text-black font-medium text-[18px] w-[200px] border-2 border-white hover:border-2 hover:border-sol-green p-3 rounded-xl flex justify-center items-center"
+                className="bg-purple-600 text-black font-medium text-[18px] w-[200px] border-2 border-white hover:border-2 hover:border-sol-green p-3 rounded-xl flex justify-center items-center"
                 onClick={() => increaseCartQuantity(matchingAsset.id)}
               >
                 <MdOutlineShoppingBag className="mr-4 w-auto h-[24px]" /> Add To

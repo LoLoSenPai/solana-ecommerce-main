@@ -20,7 +20,7 @@ export const LandingPage = () => {
           </h3>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:gap-10 select-none mb-10">
+      <div id="items-section" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:gap-10 select-none mb-10">
         {assets.map((asset, index) => {
           return (
             <Link href={`/item-detail/${asset.id}`} key={asset.image}>
