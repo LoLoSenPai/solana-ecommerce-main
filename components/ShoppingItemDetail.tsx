@@ -105,7 +105,7 @@ export default function ShoppingItemDetail() {
                 Cart
               </motion.button>
             ) : (
-              <div className="flex items-center flex-col gap-2 bg-gray-400 text-black">
+              <div className="flex items-center flex-col gap-2 bg-gray-400 text-black rounded-xl">
                 <div className="flex justify-center gap-2 border-2 border-white hover:border-2 hover:border-sol-green rounded-xl py-2">
                   <motion.button
                     whileHover={{ scale: 0.9 }}

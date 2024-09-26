@@ -296,9 +296,6 @@ export const CartCheckout: React.FC = () => {
           currency: "usd",
         }}
       >
-        {/* <div className="py-4">
-          <NavBar />
-        </div> */}
         <div className="text-black flex justify-center font-bold mb-5 text-[44px] mt-20">
           Shopping Cart
         </div>

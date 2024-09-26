@@ -34,20 +34,22 @@ export const ShoppingItem = ({
     solPrice !== null ? (price / solPrice).toFixed(2) : "Loading...";
 
   return (
-    <div className="flex flex-col items-center border-2 border-white  hover:border-2 hover:border-sol-green p-3 lg:p-6 bg-gray-100/50 rounded-xl">
+    <div className="flex flex-col items-center p-3 lg:p-6">
       <div className="hover:underline decoration-sol-green">
-        <div
-          className={`relative bg-opacity-0 hover:bg-opacity-100 transform hover:scale-95 transition-transform duration-500 ease-in-out shadow-2xl`}
-        >
-          <Image
-            src={image}
-            alt={name}
-            width={400}
-            height={400}
-            className="rounded-xl"
-          />
+        <div className="border-black border-b-4 rounded-xl p-2">
+          <div
+            className={`relative transform hover:scale-95 transition-transform duration-500 ease-in-out`}
+          >
+            <Image
+              src={image}
+              alt={name}
+              width={400}
+              height={400}
+              className="rounded-xl"
+            />
+          </div>
         </div>
-        <div className="flex flex-col pt-2 text-black">
+        <div className="flex flex-col pt-2 text-black ml-4">
           <p className="text-[22px] font-medium">{name}</p>
           <p className="flex text-[18px] items-center font-medium pt-2">
             <span className="mr-1">
