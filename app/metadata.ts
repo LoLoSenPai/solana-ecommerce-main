@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Roro Shop",
   description: "Ecommerce site to purchase crypto products.",
-  metadataBase: new URL("https://shop.lololabs.xyz/"),
+  metadataBase: new URL("https://shop.roroland.xyz/"),
   openGraph: {
     title: "Roro Shop",
     description: "Ecommerce site to purchase crypto products.",
-    url: "https://shop.lololabs.xyz/",
+    url: "https://shop.roroland.xyz/",
     siteName: "Roro Shop",
     images: [
       {
